@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <left>
+      <ListView fx:id="listOfContacts" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <VBox fx:id="menuContainer" prefHeight="400.0" prefWidth="410.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="nameLabel" text="Name:" />
+            <TextField fx:id="nameTextFiield" />
+            <Label fx:id="emailLabel" text="E-mail:" />
+            <TextField fx:id="emailTextField" />
+            <Label fx:id="numberLabel" text="Phone number:" />
+            <TextField fx:id="numberTextField" />
+            <HBox prefHeight="31.0" prefWidth="364.0" spacing="10.0">
+               <children>
+                  <Button fx:id="addButton" maxWidth="60.0" minWidth="60.0" mnemonicParsing="false" text="Add" />
+                  <Button fx:id="removeButton" maxWidth="60.0" minWidth="60.0" mnemonicParsing="false" text="Remove" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="120.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="18.0" right="18.0" top="75.0" />
+         </padding>
+      </VBox>
+   </right>
+</BorderPane>
